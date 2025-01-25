@@ -37,9 +37,9 @@ ggplot(data = dif, mapping = aes(sample=kebahagiaan))+
 
 #Regresi Linear Sederhana
 simpleregresi <- lm(kebahagiaan ~ pendapatan, dif)
-summary(simpleregresi)
+summary(simpleregresi) #run pertama untuk di console
 
-plot(simpleregresi)
+plot(simpleregresi) #run kedua munculin plot default plot() akan muncul 4
 
 # 1. Plot data points pada grafik (scatter plot)
 plot(dif$pendapatan, dif$kebahagiaan, 
